@@ -1,0 +1,20 @@
+A simple mineSweeper game for Linux platform. The objective of the game is to locate or reveal all the open locations. Flaging mined locations does not count in any respect to the score. Revealing all the open locations in the minimum time get the highest score. The score is calculated using the 3BV/s where 3BV is the minimum number of left clicks required to reveal the open locations on the board. More information on 3BV/s is available on this wiki page (http://www.minesweeper.info/wiki/3BV).
+The code was not tested on Windows platform but can run using some modifications by editing the code in visual basic. The game will be made compatible with windows soon and a separate repository will be released.
+
+Direct Execution (Tested only on Ubuntu):
+	Move to the Debug directory and the permission of mineSweeper to enable executing the file as program. Now open Terminal and use cd to move to the Debug directory and run the game using ./mineSweeper.
+
+Compilation Steps:
+NOTE:
+	You require g++ and freglut3 libraries for compiling the code.
+	Ubuntu:
+		sudo apt-get install g++ freeglut3*
+	Fedora:
+		yum install g++ freeglut3*
+	Other distributions can either get from their official repositories or compile it from official source.
+
+1. Extract the archive and browse to the src folder(cd src).
+2. Compile the mineSweeper.cpp file using the command "g++ mineSweeper.cpp -o mineSweeper -lGL -lGLU -lglut" without quotes.
+3. Run the game ./mineSweeper.
+
+Check the BUGS file for list of bugs in the game. Any improvement for suggestions or bug report can be mailed on shahankit2313@gmail.com.

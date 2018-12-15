@@ -1,0 +1,4 @@
+known BUGS
+
+1. The resize handler for the game has not yet been designed and hence resizing the game makes it behave erroneously.
+2. The game is not tested on windows platform.
